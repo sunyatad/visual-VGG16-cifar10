@@ -5,6 +5,8 @@ This repository features a set of Python scripts demonstrating the use of the VG
 
 The performance of this toy model can be improved. For educational purposes, the model's overall performance and per-class performance are shown below.
 
+Train & test set losses by epoch 
+![Loss Plot](loss_plot.png)
 
 The classification report provides key metrics for model performance.
 
