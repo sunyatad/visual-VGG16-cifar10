@@ -6,4 +6,4 @@ The script is declined in different API forms.
 
 1c. VGG16 - Cifar10 - TensorFlow & Keras - Subclassing API.py
 
-2. VGG16 - Cifar10 - Pytorch - Model only.py
+2 . VGG16 - Cifar10 - Pytorch - Model only.py
