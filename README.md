@@ -8,22 +8,22 @@ The performance of this toy model can be improved. For educational purposes, the
 
 The classification report provides key metrics for model performance.
 
-              precision    recall  f1-score   support
-
-           0       0.69      0.67      0.68      1000
-           1       0.64      0.69      0.66      1000
-           2       0.52      0.49      0.51      1000
-           3       0.45      0.42      0.43      1000
-           4       0.56      0.52      0.54      1000
-           5       0.58      0.49      0.53      1000
-           6       0.60      0.71      0.65      1000
-           7       0.65      0.68      0.66      1000
-           8       0.70      0.75      0.73      1000
-           9       0.62      0.63      0.63      1000
-
-    accuracy                           0.60     10000
-   macro avg       0.60      0.60      0.60     10000
-weighted avg       0.60      0.60      0.60     10000
+                  precision    recall  f1-score   support
+    
+               0       0.69      0.67      0.68      1000
+               1       0.64      0.69      0.66      1000
+               2       0.52      0.49      0.51      1000
+               3       0.45      0.42      0.43      1000
+               4       0.56      0.52      0.54      1000
+               5       0.58      0.49      0.53      1000
+               6       0.60      0.71      0.65      1000
+               7       0.65      0.68      0.66      1000
+               8       0.70      0.75      0.73      1000
+               9       0.62      0.63      0.63      1000
+    
+        accuracy                           0.60     10000
+       macro avg       0.60      0.60      0.60     10000
+    weighted avg       0.60      0.60      0.60     10000
 
 
 Each row shows the precision, recall, and F1-score for each class, with the last rows summarizing these statistics across all classes.
