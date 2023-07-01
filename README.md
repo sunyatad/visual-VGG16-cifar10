@@ -27,11 +27,15 @@ weighted avg       0.60      0.60      0.60     10000
 
 
 Each row shows the precision, recall, and F1-score for each class, with the last rows summarizing these statistics across all classes.
-    * Class 0 (airplane): The model has a precision of 0.69, meaning that when it predicts an image is an airplane, it's correct 69% of the time. 
-      The recall is 0.67, indicating it identifies 67% of all airplane images correctly.
-    * Class 1 (automobile): Precision 0.64 and recall 0.69.
-    
-    * Etc.
+
+Class 0 (airplane): The model has a precision of 0.69, meaning that when it predicts an image is an airplane, it's correct 69% of the time. 
+The recall is 0.67, indicating it identifies 67% of all airplane images correctly.
+
+Class 1 (automobile): Precision 0.64 and recall 0.69.
+
+Etc.
+
+
 
 The F1-score is the harmonic mean of precision and recall. It provides a single score that balances both the precision and the recall. A perfect model would have an F1-score of 1.
 
