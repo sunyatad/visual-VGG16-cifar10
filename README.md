@@ -1,9 +1,12 @@
 # visual-VGG16-cifar10
+
+For educational purposes.
+
 Multifaceted Python scripts illustrating use of VGG16, a pre-trained CNN, for image classification on CIFAR-10, with Keras & PyTorch. They use transfer learning, early stopping, learning rate reduction, and model checkpointing.
 
 This repository features a set of Python scripts demonstrating the use of the VGG16 model, a pre-trained convolutional neural network, for image classification on the CIFAR-10 dataset. Both TensorFlow/Keras and PyTorch frameworks are used, with scripts showing model creation using functional, sequential and subclassing APIs. The scripts cover data loading, pre-processing, model definition, training, and evaluation. They also utilize model training strategies such as transfer learning, early stopping, learning rate reduction, and model checkpointing. This repository aims to provide resources for those interested in deep learning, computer vision, and understanding the use of pre-trained models in different deep learning frameworks.
 
-The performance of this toy model can be improved. For educational purposes, the model's overall performance and per-class performance are shown below.
+The performance of this toy model can be improved. The model's overall performance and per-class performance are shown below.
 
 
 
