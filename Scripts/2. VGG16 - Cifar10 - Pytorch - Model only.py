@@ -20,7 +20,7 @@ print("Device:", device)
 # Load and normalize the CIFAR10 training and test datasets
 transform = transforms.Compose([
     transforms.ToTensor(),
-    transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+    transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))])
 
 trainset = torchvision.datasets.CIFAR10(root='./data', train=True,
                                         download=True, transform=transform)
@@ -37,7 +37,7 @@ testloader = torch.utils.data.DataLoader(testset, batch_size=32,
                                          shuffle=False, num_workers=2)
 
 # Define a VGG16 model
-model = torchvision.models.vgg16(pretrained=True)
+model = torchvision.models.vgg16(weights='VGG16_Weights.IMAGENET1K_V1')
 for param in model.parameters():
     param.requires_grad = False
 
@@ -49,7 +49,7 @@ model = model.to(device)
 
 # Compile the model
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=0.0001)
+optimizer = optim.SGD(model.parameters(), momentum=0.9, weight_decay=5e-4, lr=0.001) 
 scheduler = ReduceLROnPlateau(optimizer, 'min', patience=10, factor=0.9, min_lr=0.00005)
 
 # Train the model
